@@ -28,10 +28,10 @@ public class Main {
 
         // converting the inputs into their necessary primitive data types
         final double totalBill = Double.parseDouble(bill);
-        final Integer tipPercent = Integer.parseInt(tip);
-        final Integer numPeople = Integer.parseInt(people);
+        final int tipPercent = Integer.parseInt(tip);
+        final int numPeople = Integer.parseInt(people);
 
-        // caclulating the total tip, the total with tip included, the tip per person, & the total cost per person
+        // calculating the total tip, the total with tip included, the tip per person, & the total cost per person
         double totalTip = ((double)tipPercent/100 * totalBill);
         double totalWithTip = totalBill + totalTip;
         double tipPerPerson = totalTip / numPeople;
